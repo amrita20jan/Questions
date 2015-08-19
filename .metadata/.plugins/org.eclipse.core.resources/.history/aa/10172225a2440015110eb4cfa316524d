@@ -1,0 +1,66 @@
+
+interface TestMain {
+	
+	void show();
+	void canFly();
+	
+}
+
+class Bird implements TestMain
+{
+	public void show(){
+		System.out.println("I am Bird");
+	}
+
+	@Override
+	public void canFly() {
+		System.out.println("I can fly");
+		
+	}
+
+}
+
+class Cat implements TestMain
+{
+public void show(){
+	System.out.println("I am Cat");
+	}
+
+	public void canFly() {
+		System.out.println("I cannot fly");
+		
+	}
+	
+}
+
+class Dog implements TestMain
+{
+	public void show(){
+		System.out.println("I am Dog");
+		}
+
+		public void canFly() {
+			System.out.println("I cannot fly");
+			
+		}
+
+}
+
+ class TestMain
+{
+  public static void main(String args[])
+  {
+	TestMain ob;
+	Bird b=new Bird();
+	Cat c=new Cat();
+	Dog d=new Dog(); 
+	
+	b.show();
+	b.canFly();
+	
+	
+	
+  }
+
+
+}

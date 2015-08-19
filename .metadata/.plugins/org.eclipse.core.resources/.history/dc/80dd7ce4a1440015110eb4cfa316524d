@@ -1,0 +1,47 @@
+
+interface Animal {
+	
+	void show();
+	void canFly();
+	
+}
+
+class Bird implements Animal
+{
+	public void show(){
+		System.out.println("I am Bird");
+	}
+
+	@Override
+	public void canFly() {
+		System.out.println("I can fly");
+		
+	}
+
+}
+
+class Cat
+{
+public void show(){
+	System.out.println("I am Cat");
+	}
+
+	public void canFly() {
+		System.out.println("I cannot fly");
+		
+	}
+	
+}
+
+class Dog
+{
+	public void show(){
+		System.out.println("I am Dog");
+		}
+
+		public void canFly() {
+			System.out.println("I cannot fly");
+			
+		}
+
+}

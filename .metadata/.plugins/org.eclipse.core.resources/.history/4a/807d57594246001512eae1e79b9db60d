@@ -1,0 +1,22 @@
+import java.util.PriorityQueue;
+
+
+public class PositiveArray {
+
+	public static void main(String[] args) {
+		
+	int[] unsorted = { -3, -95, -4, 20, 5, -6, 8 ,-9, 9};
+
+	PriorityQueue<Integer> q = new PriorityQueue<>(unsorted.length);
+
+	for (int a : unsorted) {
+	    if (a > 0)
+	        q.add(a);
+	}
+
+	while (!q.isEmpty()) {
+	    System.out.println(q.poll());
+	}
+
+  }
+}
