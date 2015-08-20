@@ -14,7 +14,7 @@ public class PositiveArray {
 	}
 
 	while (!q.isEmpty()) {
-	    System.out.println(q.poll()); 
+	    System.out.println(q.poll());
 	}
 
   }

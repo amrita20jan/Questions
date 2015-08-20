@@ -1,0 +1,42 @@
+
+public interface Imario {
+	
+	void behavior();
+
+}
+
+
+
+public class TestMario {
+
+	public static void main(String[] args) {
+		System.out.println("----game started----");
+        Imario obj=new Mario();
+        Obj.behavior();
+        System.out.println(-----After Mashroom-----");
+        obj=new SuperMario();
+        Obj.behavior();
+        System.out.println(-----After Power Loss-----");
+        obj=new Mario();
+        Obj.behavior();
+
+	}
+	
+	
+
+}
+class  Mario implements IMario
+{
+ public void behavior()
+ {
+     System.out.println("This is simple Mario");
+ }
+}
+
+class  SuperMario implements IMario
+{
+  public void behavior()
+  {
+     System.out.println("This is Super Mario with power");
+  }
+}

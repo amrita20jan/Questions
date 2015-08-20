@@ -1,5 +1,5 @@
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
+//import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -12,7 +12,7 @@ public class TotalDays {
 		 Calendar cal1 = new GregorianCalendar();
 	     Calendar cal2 = new GregorianCalendar();
 
-	     SimpleDateFormat sdf = new SimpleDateFormat("ddMMyyyy");
+	     //SimpleDateFormat sdf = new SimpleDateFormat("ddMMyyyy");
 
 	     //Date date = sdf.parse("your first date");
 	     //cal1.setTime(date);
@@ -24,13 +24,11 @@ public class TotalDays {
 	    
 	    System.out.println("cal1.getTime()    "+cal1.getTime());
 	    System.out.println("cal2.getTime()    "+cal2.getTime());
-	    
-	     System.out.println("Days= "+daysBetween(cal1.getTime(),cal2.getTime()));
+	    System.out.println("Days= "+daysBetween(cal1.getTime(),cal2.getTime()));
 
 		
 
 	}
-
 	public static int daysBetween(Date d1, Date d2){
 		System.out.println("d2 time==  "+d2.getTime());
 		System.out.println("d1 time==  "+d1.getTime());

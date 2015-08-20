@@ -11,6 +11,7 @@ public class Sum {
 		    try{
 		    	System.out.println("numbers===>>>>  "+numbers[i]);
 		    	sum=sum+Integer.parseInt(numbers[i]);
+		    	System.out.println("sum    "+sum);
 		        //sum+=Integer.parseInt(numbers[i]);
 		    }
 		    catch( Exception e ) {
@@ -18,6 +19,5 @@ public class Sum {
 		    }
 		}
 		System.out.println("The sum is:"+sum);
-	}
-
-}
+	  }
+ }

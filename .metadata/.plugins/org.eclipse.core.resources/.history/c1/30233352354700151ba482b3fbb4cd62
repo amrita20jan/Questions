@@ -1,0 +1,44 @@
+
+interface Duck
+{
+	void DuckType();
+	void DuckProperty();
+}
+
+abstract class WhiteDuck{
+	
+	abstract public void DuckP();
+	
+	public void DuckC(){
+		System.out.println("Hello I am in abstract class");
+	}
+	
+	
+} 
+
+class BlackDuck extends WhiteDuck implements Duck
+{
+	 public void DuckType()
+	 {
+	     System.out.println("Black Duck");
+	 }
+	
+	 public void DuckProperty()
+	 {
+	   System.out.println("Swim, Quack  and Fly");
+	 }
+
+	 public void DuckP() {
+		 System.out.println("Hello I am abstract implemented method");
+	 }
+ }
+
+class TestDuck
+{
+	public static void main(String args[])
+ {
+     BlackDuck obj=new BlackDuck();
+     obj.DuckType();
+     obj.DuckProperty();
+ }
+}

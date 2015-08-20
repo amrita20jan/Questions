@@ -1,0 +1,29 @@
+
+interface Duck
+{
+    Void DuckType();
+    Void DuckProperty();
+}
+
+class BlackDuck implements Duck
+{
+ public void DuckType()
+ {
+     System.out.println("Black Duck");
+ }
+
+ Public void DuckProperty()
+ {
+   System.out.println("Swim, Quack  and Fly");
+ }
+ }
+
+class TestDuck
+{
+ Public static void main(String args[])
+ {
+     BlackDuck obj=new BlackDuck();
+     Obj.DuckType();
+     Obj.DuckProperty();
+ }
+}

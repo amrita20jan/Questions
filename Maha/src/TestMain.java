@@ -51,22 +51,14 @@ class Dog implements Animal
   public static void main(String args[])
   {
 	Animal ob = new Bird();
-	Animal ob1 = new Cat();
-	Animal ob2 = new Dog();
-	/*Bird b=new Bird();
-	Cat c=new Cat();
-	Dog d=new Dog(); 
-	*/
 	ob.show();
 	ob.canFly();
-	
-	ob1.show();
-	ob1.canFly();
-	
-	ob2.show();
-	ob2.canFly();
-	
-	
+	//ob = new Cat();
+	ob.show();
+	ob.canFly();
+	//ob = new Dog();
+	ob.show();
+	ob.canFly();
 	
   }
 

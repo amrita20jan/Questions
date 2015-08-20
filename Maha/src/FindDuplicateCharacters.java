@@ -9,8 +9,6 @@ public class FindDuplicateCharacters {
 		printDuplicateCharacters("programm");
 
 	}
-	
-	
 	public static void printDuplicateCharacters(String word) {
 		char []characters= word.toCharArray();
 		
@@ -33,14 +31,9 @@ public class FindDuplicateCharacters {
 		System.out.printf("List of duplicate characters in String '%s' %n", word); 
 		for (Map.Entry<Character, Integer> entry : entrySet) 
 		{ 
-			if (entry.getValue() > 1) 
-			  {
+			if (entry.getValue() > 1) {
 				System.out.printf("%s : %d %n", entry.getKey(), entry.getValue());
 		      }
 		}
-
-		
-		
-		
 	}
    }
