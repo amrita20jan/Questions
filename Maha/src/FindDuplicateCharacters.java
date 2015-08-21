@@ -2,12 +2,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-
 public class FindDuplicateCharacters {
 
 	public static void main(String[] args) {
 		printDuplicateCharacters("programm");
-
 	}
 	public static void printDuplicateCharacters(String word) {
 		char []characters= word.toCharArray();
@@ -27,7 +25,6 @@ public class FindDuplicateCharacters {
 	    }
 		
 		Set<Map.Entry<Character, Integer>> entrySet = charMap.entrySet(); 
-		
 		System.out.printf("List of duplicate characters in String '%s' %n", word); 
 		for (Map.Entry<Character, Integer> entry : entrySet) 
 		{ 
@@ -35,5 +32,5 @@ public class FindDuplicateCharacters {
 				System.out.printf("%s : %d %n", entry.getKey(), entry.getValue());
 		      }
 		}
-	}
+	  }
    }
